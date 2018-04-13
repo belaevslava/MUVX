@@ -1,0 +1,80 @@
+.figure.how-it-works__item {
+  display: flex;
+  margin-bottom: 2rem;
+  h3 {
+    letter-spacing: 2px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.how-it-works__device {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 252px;
+  height: 500px;
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: .7s;
+  opacity: 0;
+  transform: translateY(800px);
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:before {
+    right: 12px;
+    left: 12px;
+    top: 12px;
+    bottom: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  &:after {
+    background-image: url(../how-it-works/how-it-works__iPhone-X.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.active.fp-completely .how-it-works__device {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.how-it-works__slick-slider {
+  position: absolute!important;
+  top: 30px;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+}
+
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,.12) 0 2px 8px;
+}
+.app-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.app-content {
+  font-size: 12px;
+}

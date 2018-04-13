@@ -1,0 +1,48 @@
+.home__device {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 278px;
+  height: 555px;
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: .7s;
+  opacity: 0;
+  transform: translateX(1200px);
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:before {
+    right: 12px;
+    left: 12px;
+    top: 12px;
+    bottom: 12px;
+    border-radius: 12px;
+    background-image: url(../home/home__iPhone-X-bg.png);
+  }
+  &:after {
+    background-image: url(../home/home__iPhone-X.svg);
+  }
+}
+
+.active.fp-completely .home__device {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.home__MUVX-logo {
+  max-width: 180px;
+  z-index: 1;
+}

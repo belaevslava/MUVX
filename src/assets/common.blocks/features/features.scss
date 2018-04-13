@@ -1,0 +1,45 @@
+.figure.features__item {
+  display: flex;
+  margin-bottom: 2rem;
+  h3 {
+    letter-spacing: 2px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.features__device {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 252px;
+  height: 500px;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:before {
+    right: 12px;
+    left: 12px;
+    top: 12px;
+    bottom: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  &:after {
+    background-image: url(../features/features__IPhone_X.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
