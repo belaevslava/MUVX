@@ -19,9 +19,7 @@
   margin-bottom: 0;
   overflow: hidden;
   transition: .7s;
-  opacity: 0;
-  transform: translateY(800px);
-
+  
   &:before,
   &:after {
     content: "";
@@ -47,11 +45,6 @@
     background-repeat: no-repeat;
   }
 }
-.active.fp-completely .how-it-works__device {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .how-it-works__slick-slider {
   position: absolute!important;
   top: 30px;
