@@ -3,10 +3,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#main-navbar',
         lockAnchors: false,
-        anchors:['home', 'how-it-works', 'features', 'screenshots', 'team', 'contacts'],
+        anchors:['home', 'how-it-works', 'features', 'screenshots', 'team'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['home', 'how-it-works', 'features', 'screenshots', 'team', 'contacts'],
+        navigationTooltips: ['home', 'how-it-works', 'features', 'screenshots', 'team'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -31,7 +31,7 @@ $(document).ready(function() {
         offsetSections: false,
         resetSliders: false,
         fadingEffect: false,
-        normalScrollElements: '#element1, .element2',
+        normalScrollElements: '#element1, .contacts',
         scrollOverflow: false,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
@@ -75,6 +75,11 @@ $(document).ready(function() {
 });
 
 $('.how-it-works__slick-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
+
+$('.screenshots__slick-slider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
 });

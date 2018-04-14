@@ -1,0 +1,18 @@
+@import "../page-header/page-header";
+@import "../home/home";
+@import "../how-it-works/how-it-works";
+@import "../features/features";
+@import "../screenshots/screenshots";
+@import "../../library.blocks/bootstrap/bootstrap";
+
+.section {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
