@@ -3,12 +3,7 @@
 }
 
 .screenshots__device {
-  position: absolute;
   display: inline-flex;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 120px;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -34,4 +29,14 @@
 .screenshots.fp-completely.active .screenshots__device {
   opacity: 1;
   transform: translateY(0) rotate(0deg);
+}
+
+@media (min-width: 768px) {
+  .screenshots__device {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 120px;
+  }
 }

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MUVX Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUVX — mobile Mover App</title>
     <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     <!-- Page -->
@@ -42,21 +43,21 @@
     <section class="home section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-7">
-                    <header class="mb-5 text-left">
-                        <h1 class="text-left">Download our app <br><b class="text-primary">now</b>!</h1>
-                        <p class="lead">The most amazing mover app <br>you'll ever use!</p>
+                <div class="col-md-7 text-center text-md-left">
+                    <header class="mb-5">
+                        <h1 class="text-md-left">Download our app <br class="d-none d-lg-block"><b class="text-primary">now</b>!</h1>
+                        <p class="lead">The most amazing mover app <br class="d-none d-lg-block">you'll ever use!</p>
                     </header>
-                    <a href="#" class="home__link home__link-to-app-store"><img src="assets/common.blocks/home/home__app-store-button.svg" alt=""></a>
-                    <a href="#" class="home__link home__link-to-google-play"><img src="assets/common.blocks/home/home__google-play-button.svg" alt=""></a>
+                    <a href="#" class="home__link home__link-to-app-store mb-4"><img src="assets/common.blocks/home/home__app-store-button.svg" alt=""></a>
+                    <a href="#" class="home__link home__link-to-google-play mb-4"><img src="assets/common.blocks/home/home__google-play-button.svg" alt=""></a>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center align-items-center">
-                    <figure class="home__device">
+                    <figure class="home__device d-none d-md-inline-flex">
                         <img src="assets/common.blocks/home/home__MUVX-logo.svg" alt="" class="home__MUVX-logo">
                     </figure>
                 </div>
             </div>
-            <a href="#how-it-works" class="home__scroll-down-indicator"><img src="assets/common.blocks/home/home__scroll-down-indicator.svg" alt=""></a>
+            <a href="#how-it-works" class="home__scroll-down-indicator d-none d-md-inline-block"><img src="assets/common.blocks/home/home__scroll-down-indicator.svg" alt=""></a>
         </div>
     </section>
     <!-- /Home -->
@@ -65,40 +66,38 @@
         <div class="container">
             <h2 class="mb-5">How it works</h2>
             <div class="row align-items-center">
-                <div class="col-md-4">
-                    <figure class="figure how-it-works__item text-right">
-                        <figcaption class="figure-caption">
-                            <h3 class="h5">1. Inputing your information</h3>
-                            <p>Select the size of your move<br>so we can pick the best mover for you</p>
-                        </figcaption>
-                        <img src="assets/common.blocks/how-it-works/how-it-works__ruller_style_flat.svg" alt="" class="ml-4">
-                    </figure>
-                    <figure class="figure how-it-works__item text-right">
-                        <figcaption class="figure-caption">
-                            <h3 class="h5">2. Scheduling<br> a move</h3>
-                            <p>Pick a date and time that fits your schedule</p>
-                        </figcaption>
-                        <img src="assets/common.blocks/how-it-works/how-it-works__scheduler_style_flat.svg" alt="" class="ml-4">
-                    </figure>
-                </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-5 col-xl-4 d-none d-md-flex">
                     <figure class="how-it-works__device">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3561.1114384307107!2d144.9828249845766!3d-37.86578795188121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x6ad6686866392389%3A0x5045675218cdae0!2z0KHQtdC90YIt0JrQuNC70LTQsCwg0JLQuNC60YLQvtGA0LjRjyAzMTgyLCDQkNCy0YHRgtGA0LDQu9C40Y8!3m2!1d-37.864!2d144.982!4m3!3m2!1d-37.866491599999996!2d144.9851472!5e0!3m2!1sru!2s!4v1523797448370"></iframe>
                     </figure>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-7 col-xl-8">
+                    <figure class="figure how-it-works__item">
+                        <img src="assets/common.blocks/how-it-works/how-it-works__ruller_style_flat.svg" alt="" class="mr-4">
+                        <figcaption class="figure-caption">
+                            <h3 class="h5">1. Inputing your information</h3>
+                            <p>Select the size of your move <br>so we can pick the best mover for you</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="figure how-it-works__item">
+                        <img src="assets/common.blocks/how-it-works/how-it-works__scheduler_style_flat.svg" alt="" class="mr-4">
+                        <figcaption class="figure-caption">
+                            <h3 class="h5">2. Scheduling a move</h3>
+                            <p>Pick a date and time that fits <br>your schedule</p>
+                        </figcaption>
+                    </figure>
                     <figure class="figure how-it-works__item">
                         <img src="assets/common.blocks/how-it-works/how-it-works__accepting-a-mover_style_flat.svg" alt="" class="mr-4">
                         <figcaption class="figure-caption text-left">
-                            <h3 class="h5">3. Accepting <br>a mover</h3>
-                            <p>Confirm the mover<br> for your move or choose<br> "Find new mover"</p>
+                            <h3 class="h5">3. Accepting a mover</h3>
+                            <p>Confirm the mover for your move <br>or choose "Find new mover"</p>
                         </figcaption>
                     </figure>
                     <figure class="figure how-it-works__item">
                         <img src="assets/common.blocks/how-it-works/how-it-works__rate_style_flat.svg" alt="" class="mr-4">
                         <figcaption class="figure-caption text-left">
-                            <h3 class="h5">4. Complete and <br>rate a mover</h3>
-                            <p>Let your mover know the move is finished and provide feedback to let your mover know how they did!</p>
+                            <h3 class="h5">4. Complete and rate a mover</h3>
+                            <p>Let your mover know the move is finished <br>and provide feedback to let your mover know how they did!</p>
                         </figcaption>
                     </figure>
                 </div>
@@ -145,7 +144,7 @@
             <section class="features__equipments">
                 <h3 class="mb-5">Extra equipments</h3>
                 <div class="row justify-content-center">
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                         <figure class="figure">
                             <img src="assets/common.blocks/features/features__trailer_style_flat.svg" alt="" class="figure-img features__trailer">
                             <figcaption class="figure-caption">
@@ -153,7 +152,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                         <figure class="figure">
                             <img src="assets/common.blocks/features/features__trolley_style_flat.svg" alt="" class="figure-img features__trolley">
                             <figcaption class="figure-caption">
@@ -161,7 +160,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                         <figure class="figure">
                             <img src="assets/common.blocks/features/features__straps_style_flat.svg" alt="" class="figure-img features__straps">
                             <figcaption class="figure-caption">
@@ -169,7 +168,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
                         <figure class="figure">
                             <img src="assets/common.blocks/features/features__blanket_style_flat.svg" alt="" class="figure-img features__blanket">
                             <figcaption class="figure-caption">
@@ -184,8 +183,8 @@
     <!-- /Features -->
     <!-- Screenshots -->
     <section class="screenshots section">
-        <div class="container">
-            <h2>Screenshots</h2>
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+            <h2 class="mb-5">Screenshots</h2>
             <figure class="screenshots__device">
                 <div class="screenshots__slick-slider">
                     <img src="assets/common.blocks/screenshots/screenshots__Create-Move-C.png" alt="">
@@ -212,7 +211,7 @@
         <div class="container text-center">
             <h2 class="mb-5">Our team</h2>
             <div class="row justify-content-center">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <figure class="card">
                         <div class="team__card-image team__Jason-image" style="background-image: url(assets/common.blocks/team/team__Jason-Sumpter.JPG);" alt="Jason Sumpter"></div>
                         <div class="card-body">
@@ -220,7 +219,7 @@
                         </div>
                     </figure>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <figure class="card">
                         <div class="team__card-image team__Nick-image" style="background-image: url(assets/common.blocks/team/team__Nick-Robinett.JPG);" alt="Nick Robinett"></div>
                         <div class="card-body">

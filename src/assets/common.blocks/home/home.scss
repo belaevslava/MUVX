@@ -1,23 +1,9 @@
 .home {
   position: relative;
   overflow: hidden;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url(../home/home__background.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0;
-    transition: 2.4s;
-    transition-delay: 1.2s;
-  }
 }
 .home__link {
+  display: inline-block;
   opacity: 0;
   transition: .7s;
   &:hover {
@@ -97,5 +83,32 @@
   }
   .home__link {
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .home {
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url(../home/home__background.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+      transition: 2.4s;
+      transition-delay: 1.2s;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .home>.container {
+    padding-top: 80px;
   }
 }

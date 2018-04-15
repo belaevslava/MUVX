@@ -1,5 +1,14 @@
-.section {
-  &>.container {
-    padding-top: 80px;
+@media (max-width: 767px) {
+  .section {
+    height: initial!important;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .section {
+    &>.container {
+      padding-top: 80px;
+    }
   }
 }
