@@ -46,15 +46,15 @@ $(document).ready(function() {
 
         //Design
         controlArrows: true,
-        verticalCentered: true,
+        verticalCentered: false,
         sectionsColor : [],
         paddingTop: '0',
-        paddingBottom: '10px',
-        fixedElements: '#page-header, .footer',
-        responsiveWidth: 0,
+        paddingBottom: '0',
+        fixedElements: '',
+        responsiveWidth: 767,
         responsiveHeight: 0,
         responsiveSlides: false,
-        parallax: false,
+        parallax: true,
         parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
         //Custom selectors
