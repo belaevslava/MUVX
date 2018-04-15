@@ -1,5 +1,21 @@
 .home {
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../home/home__background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: 2.4s;
+    transition-delay: 1.2s;
+  }
 }
 .home__link {
   opacity: 0;
@@ -72,6 +88,9 @@
 
 
 .home.active.fp-completely {
+  &:before {
+    opacity: .5;
+  }
   .home__device {
     opacity: 1;
     transform: translateX(0);

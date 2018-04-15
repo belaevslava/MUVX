@@ -16,7 +16,7 @@
   margin-bottom: 0;
   overflow: hidden;
   transition: .7s;
-  transform: translateY(200px) rotate(90deg);
+  transform: translateY(600px) rotate(90deg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,6 +32,23 @@
 }
 
 .screenshots.fp-completely.active .screenshots__device {
+  //animation: screenshots-device-animation 1s ease;
+  //animation-fill-mode: forwards;
   opacity: 1;
-  transform: rotate(0deg);
+  transform: translateY(0) rotate(0deg);
+}
+
+@keyframes screenshots-device-animation {
+  0% {
+    opacity: 1;
+    transform: translateY(300px) rotate(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
 }

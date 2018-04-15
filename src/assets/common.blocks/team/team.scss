@@ -1,0 +1,29 @@
+.team__card-image {
+  display: inline-block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.team__Jason-image {
+  background-size: 200%;
+  background-position: center -75px;
+}
+.team__Nick-image {
+  background-size: 225%;
+  background-position: center -110px;
+}
+
+.team__icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+}
+
+.team__icon_type_instagram { background-image: url(../team/team__icon_type_instagram.svg) }
+.team__icon_type_facebook { background-image: url(../team/team__icon_type_facebook.svg) }
+.team__icon_type_twitter { background-image: url(../team/team__icon_type_twitter.svg) }
+.team__icon_type_email { background-image: url(../team/team__icon_type_email.svg) }

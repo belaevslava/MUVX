@@ -1,0 +1,8 @@
+.page-footer {
+  transform: translateY(100px);
+  transition: .7s;
+}
+
+.fp-viewing-team .page-footer {
+  transform: translateY(0);
+}
