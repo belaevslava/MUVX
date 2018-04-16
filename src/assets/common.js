@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
     $('#fullpage').fullpage({
         //Navigation
         menu: '.page-header__navbar',
@@ -72,14 +72,14 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-});
 
-$('.how-it-works__slick-slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-});
+    $('.how-it-works__slick-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 
-$('.screenshots__slick-slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
+    $('.screenshots__slick-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 });

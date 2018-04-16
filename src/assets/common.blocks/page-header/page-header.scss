@@ -1,5 +1,17 @@
-.page-header .btn-primary {
-  transition: .7s;
+.page-header {
+  .btn-primary {
+    transition: .7s;
+  }
+  .navbar-toggler {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color: #3F51B5;
+    background-image: url(../page-header/page-header__navbar-toggler-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+  }
 }
 
 .page-header__navbar {
