@@ -63,7 +63,7 @@
         animation-name: draw;
         animation-duration: calc(var(--animation-delay) * var(--animation-duration) * 1s);
         animation-fill-mode: forwards;
-        animation-delay: 1.2s;
+        animation-delay: 1.5s;
         }
         }
 

@@ -88,7 +88,7 @@
     opacity: 0;
     transform: translateX(1200px);
   }
-  .home.active.fp-completely {
+  body.loaded .home.active.fp-completely {
     &:before {
       opacity: .5;
     }

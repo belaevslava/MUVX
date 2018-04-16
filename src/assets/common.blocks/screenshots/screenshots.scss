@@ -1,5 +1,8 @@
 .screenshots {
   overflow: hidden;
+  .slick-arrow {
+    display: none!important;
+  }
 }
 
 .screenshots__device {

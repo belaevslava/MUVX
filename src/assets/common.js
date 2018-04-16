@@ -73,13 +73,18 @@ jQuery(document).ready(function($) {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 
-    $('.how-it-works__slick-slider').slick({
+    $('.screenshots__slick-slider').slick({
         autoplay: true,
         autoplaySpeed: 2000,
     });
 
-    $('.screenshots__slick-slider').slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
+    // When all loaded
+    $(window).on("load", function() {
+        $('.preloader').fadeOut();
+        $('body').addClass('loaded');
+        var muvxHomeLogoElement = $('.home__MUVX-logo'),
+            muvxHomeLogoElementSrc = muvxHomeLogoElement.attr('src');
+
+        muvxHomeLogoElement.src(muvxHomeLogoElementSrc + '?loaded');
     });
 });
