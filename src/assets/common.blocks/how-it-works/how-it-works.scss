@@ -84,3 +84,29 @@
 .app-content {
   font-size: 12px;
 }
+
+@media (min-width: 768px) {
+  .how-it-works__item {
+    transform: translateX(240px);
+    opacity: 0;
+    transition: .7s;
+  }
+  .how-it-works__step-1 {
+    transition-delay: .24s;
+  }
+  .how-it-works__step-2 {
+    transition-delay: .48s;
+  }
+  .how-it-works__step-3 {
+    transition-delay: .72s;
+  }
+  .how-it-works__step-4 {
+    transition-delay: .96s;
+  }
+  .how-it-works.fp-completely.active {
+    .how-it-works__item {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

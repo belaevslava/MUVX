@@ -41,12 +41,29 @@
 }
 
 @media (min-width: 768px) {
-  .features__equipments .figure-img,
+  .features__equipments .figure,
   .features__vehicles .figure-img {
     transition: .7s;
   }
   .features__vehicles .figure-img {
     transform: translateX(-300px);
+  }
+
+  .features__equipments .figure {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  .features__equipments .features__equipments-item-1 {
+    transition-delay: 1.24s;
+  }
+  .features__equipments .features__equipments-item-2 {
+    transition-delay: 1.48s;
+  }
+  .features__equipments .features__equipments-item-3 {
+    transition-delay: 1.72s;
+  }
+  .features__equipments .features__equipments-item-4 {
+    transition-delay: 1.96s;
   }
   .features.active.fp-completely {
     .features__vehicles .figure-img {
@@ -57,6 +74,11 @@
       &.features__truck {
         transition-delay: .48s;
       }
+    }
+
+    .features__equipments .figure {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }
