@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         //Navigation
-        menu: '#main-navbar',
+        menu: '.page-header__navbar',
         lockAnchors: false,
         anchors:['home', 'how-it-works', 'features', 'screenshots', 'team'],
         navigation: false,

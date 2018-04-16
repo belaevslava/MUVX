@@ -3,40 +3,40 @@
 }
 
 .screenshots__device {
-  display: inline-flex;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  width: 345px;
-  height: 700px;
-  overflow: hidden;
-  transition: .7s;
-  transform: translateY(600px) rotate(90deg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../screenshots/screenshots__Google-Pixel-Really-Blue.svg);
-}
-.screenshots__slick-slider {
-  position: absolute!important;
-  top: 69px;
-  bottom: 81px;
-  left: 16px;
-  right: 19px;
-  overflow: hidden;
-}
-
-.screenshots.fp-completely.active .screenshots__device {
-  opacity: 1;
-  transform: translateY(0) rotate(0deg);
+  display: block;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .screenshots__device {
     position: absolute;
+    display: inline-flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 345px;
+    height: 700px;
     left: 0;
     right: 0;
     bottom: 0;
     top: 120px;
+    transition: .7s;
+    transform: translateY(600px) rotate(90deg);
+    background-image: url(../screenshots/screenshots__Google-Pixel-Really-Blue.svg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .screenshots__slick-slider {
+    position: absolute!important;
+    top: 69px;
+    bottom: 81px;
+    left: 16px;
+    right: 19px;
+    overflow: hidden;
+  }
+  .screenshots.fp-completely.active .screenshots__device {
+    transform: translateY(0) rotate(0deg);
   }
 }

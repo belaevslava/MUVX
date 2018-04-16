@@ -4,18 +4,10 @@
 }
 .home__link {
   display: inline-block;
-  opacity: 0;
   transition: .7s;
   &:hover {
     opacity: .8;
   }
-}
-
-.home__link-to-app-store {
-  transition-delay: .48s;
-}
-.home__link-to-google-play {
-  transition-delay: .96s;
 }
 
 .home__scroll-down-indicator {
@@ -37,9 +29,6 @@
   height: 555px;
   margin-bottom: 0;
   overflow: hidden;
-  transition: .7s;
-  opacity: 0;
-  transform: translateX(1200px);
 
   &:before,
   &:after {
@@ -73,19 +62,6 @@
 }
 
 
-.home.active.fp-completely {
-  &:before {
-    opacity: .5;
-  }
-  .home__device {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  .home__link {
-    opacity: 1;
-  }
-}
-
 @media (min-width: 768px) {
   .home {
     position: relative;
@@ -105,6 +81,36 @@
       transition: 2.4s;
       transition-delay: 1.2s;
     }
+  }
+
+  .home__device {
+    transition: .7s;
+    opacity: 0;
+    transform: translateX(1200px);
+  }
+  .home.active.fp-completely {
+    &:before {
+      opacity: .5;
+    }
+    .home__device {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .home__link {
+      opacity: 1;
+    }
+  }
+
+
+  .home__link {
+    opacity: 0;
+  }
+
+  .home__link-to-app-store {
+    transition-delay: .48s;
+  }
+  .home__link-to-google-play {
+    transition-delay: .96s;
   }
 }
 @media (max-width: 767px) {

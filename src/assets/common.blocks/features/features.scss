@@ -40,31 +40,23 @@
   }
 }
 
-.features__equipments .figure-img,
-.features__vehicles .figure-img {
-  transition: .7s;
-}
-.features__vehicles .figure-img {
-  transform: translateX(-300px);
-}
-//.features__equipments .figure-img {
-//  transform: translateY(-300px);
-//}
-.features.active.fp-completely {
+@media (min-width: 768px) {
+  .features__equipments .figure-img,
   .features__vehicles .figure-img {
-    transform: translateX(0);
-    &.features__van {
-      transition-delay: .24s;
-    }
-    &.features__truck {
-      transition-delay: .48s;
+    transition: .7s;
+  }
+  .features__vehicles .figure-img {
+    transform: translateX(-300px);
+  }
+  .features.active.fp-completely {
+    .features__vehicles .figure-img {
+      transform: translateX(0);
+      &.features__van {
+        transition-delay: .24s;
+      }
+      &.features__truck {
+        transition-delay: .48s;
+      }
     }
   }
-  //.features__equipments .figure-img {
-  //  transform: translateY(0);
-  //  &.features__trailer { transition-delay: .72s; }
-  //  &.features__trolley { transition-delay: .96s; }
-  //  &.features__straps { transition-delay: 1.2s; }
-  //  &.features__blanket { transition-delay: 1.44s; }
-  //}
 }
