@@ -81,4 +81,16 @@
       opacity: 1;
     }
   }
+
+  .features {
+    header, h1, h2, h3 {
+      opacity: 0;
+      transition: .7s;
+    }
+    &.active.fp-completely {
+      header, h1, h2, h3 {
+        opacity: 1;
+      }
+    }
+  }
 }

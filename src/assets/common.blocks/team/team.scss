@@ -24,8 +24,13 @@
   display: inline-block;
   width: 60px;
   height: 60px;
-  background-size: cover;
+  border-radius: 50%;
+  background-size: 100%;
   background-position: center;
+  transition: .7s;
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 
 .team__icon_type_instagram { background-image: url(../team/team__icon_type_instagram.svg) }
