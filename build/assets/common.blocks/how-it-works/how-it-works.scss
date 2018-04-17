@@ -50,20 +50,21 @@
     left: 0;
     right: 0;
     bottom: 0;
-  }
-  &:before {
-    right: 12px;
-    left: 12px;
-    top: 12px;
-    bottom: 12px;
-    border-radius: 12px;
-    background-color: #fff;
-  }
-  &:after {
-    background-image: url(../how-it-works/how-it-works__Samsung-Galaxy-S8.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  &:before {
+    right: 10px;
+    left: 10px;
+    top: 38px;
+    bottom: 34px;
+    border-radius: 12px;
+    background-image: url(../how-it-works/how-it-works__device-screen.png);
+    background-size: 100% 100%;
+  }
+  &:after {
+    background-image: url(../how-it-works/how-it-works__Samsung-Galaxy-S8.svg);
   }
 }
 
