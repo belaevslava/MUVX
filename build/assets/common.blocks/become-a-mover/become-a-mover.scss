@@ -1,0 +1,67 @@
+.become-a-mover__list-of-requirements {
+  list-style: none;
+  li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    &:before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-image: url(../become-a-mover/become-a-mover__checkbox.svg);
+      background-size: cover;
+      position: absolute;
+      left: -32px;
+      top: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .become-a-mover {
+    position: relative;
+    overflow: hidden;
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      transition: .7s;
+      opacity: .9;
+    }
+    &:before {
+      left: -240px;
+      top: 20%;
+      background-image: url(../become-a-mover/become-a-mover__steering-wheel.svg);
+      background-size: cover;
+      animation: steering-wheel-animation 6s infinite;
+    }
+    &:after {
+      right: -240px;
+      bottom: 20%;
+      background-image: url(../become-a-mover/become-a-mover__box.svg);
+      background-size: cover;
+    }
+
+    &.active.fp-completely {
+      &:before {
+        left: -120px;
+      }
+      &:after {
+        right: -160px;
+      }
+    }
+  }
+}
+
+@keyframes steering-wheel-animation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+}

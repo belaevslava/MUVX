@@ -3,10 +3,10 @@ jQuery(document).ready(function($) {
         //Navigation
         menu: '.page-header__navbar',
         lockAnchors: false,
-        anchors:['home', 'how-it-works', 'features', 'screenshots', 'team'],
+        anchors:['home', 'how-it-works', 'features', 'become-a-mover', 'team'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['home', 'how-it-works', 'features', 'screenshots', 'team'],
+        navigationTooltips: ['home', 'how-it-works', 'features', 'become-a-mover', 'team'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -71,11 +71,6 @@ jQuery(document).ready(function($) {
         afterResponsive: function(isResponsive){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-    });
-
-    $('.screenshots__slick-slider').slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
     });
 
     // When all loaded
