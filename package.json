@@ -1,7 +1,33 @@
 {
   "name": "bingo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing for «MUVX»",
+  "homepage": "https://belaevslava.github.io/muvx/build/index.html",
+  "previews": {
+    "directory": "previews",
+    "images": [
+      {
+        "path": "index.png",
+        "title": "About"
+      },
+      {
+        "path": "how_it_works.png",
+        "title": "How It Works"
+      },
+      {
+        "path": "features.png",
+        "title": "Features"
+      },
+      {
+        "path": "become_a_mover.png",
+        "title": "Become a Mover"
+      },
+      {
+        "path": "team.png",
+        "title": "Team"
+      }
+    ]
+  },
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
