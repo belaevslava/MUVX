@@ -5,6 +5,9 @@
   "homepage": "https://belaevslava.github.io/muvx/build/index.html",
   "previews": {
     "directory": "previews",
+    "main": {
+      "path": "/thumbs/index.png",
+    },
     "images": [
       {
         "path": "index.png",
